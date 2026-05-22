@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Flappy Flight - Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+        
+        <div class="info-panel">
+            <div class="stat">
+                <span class="stat-label">SCORE</span>
+                <span class="stat-value" id="currentScore">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">BEST</span>
+                <span class="stat-value" id="bestScore">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">MODE</span>
+                <span class="stat-value" id="modeDisplay">HARD</span>
+            </div>
+            <button id="menuButton">📋 MENU</button>
+            <button id="logoutButton">🚪 EXIT</button>
+        </div>
+        
+        <div class="controls-info">
+            <span>🖱️ CLICK / SPACE / TAP → FLAP</span>
+            <span class="mode-hint">🔵 EASY = wide gap &nbsp;|&nbsp; 🔴 HARD = narrow gap</span>
+        </div>
+        
+        <div id="userBadge" class="user-badge"></div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
